@@ -31,7 +31,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     '8000-abi19x-djangoblog-vkv0g423ihf.ws-eu118.gitpod.io',
-    '.herokuapp.com'
+    '.herokuapp.com',
+    '8000-abi19x-djangoblog-swkueq0okwz.ws-eu118.gitpod.io'
 ]
 
 
@@ -90,6 +91,11 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeinstitute-ide.net/",
+    "https://*.herokuapp.com",
+    "https://8000-abi19x-djangoblog-swkueq0okwz.ws-eu118.gitpod.io"
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
