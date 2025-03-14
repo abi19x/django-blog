@@ -27,12 +27,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-csq9vd4p+hz$2@1bfmf4obb=87b&@d#1*xoq4ozaeqru+t6p+t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-abi19x-djangoblog-vkv0g423ihf.ws-eu118.gitpod.io',
     '.herokuapp.com',
-    '8000-abi19x-djangoblog-swkueq0okwz.ws-eu118.gitpod.io'
+    '8000-abi19x-djangoblog-swkueq0okwz.ws-eu118.gitpod.io',
+    '8000-abi19x-djangoblog-xvz0c27sea8.ws-eu118.gitpod.io'
 ]
 
 
@@ -94,7 +95,8 @@ DATABASES = {
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeinstitute-ide.net/",
     "https://*.herokuapp.com",
-    "https://8000-abi19x-djangoblog-swkueq0okwz.ws-eu118.gitpod.io"
+    "https://8000-abi19x-djangoblog-swkueq0okwz.ws-eu118.gitpod.io",
+    "https://8000-abi19x-djangoblog-xvz0c27sea8.ws-eu118.gitpod.io"
 ]
 
 # Password validation
