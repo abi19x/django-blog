@@ -18,6 +18,7 @@ if os.path.isfile('env.py'):
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 
 # Quick-start development settings - unsuitable for production
@@ -37,7 +38,8 @@ ALLOWED_HOSTS = [
     '8000-abi19x-djangoblog-8ipklgnzvkh.ws-eu118.gitpod.io',
     '8000-abi19x-djangoblog-jp9ca1g13xa.ws-eu118.gitpod.io',
     '8000-abi19x-djangoblog-tzch1tuo4ip.ws-eu118.gitpod.io',
-    '8000-abi19x-djangoblog-ucykr626v2h.ws-eu118.gitpod.io'
+    '8000-abi19x-djangoblog-ucykr626v2h.ws-eu118.gitpod.io',
+    '8000-abi19x-djangoblog-unede7uygym.ws-eu118.gitpod.io'
 ]
 
 
@@ -69,7 +71,7 @@ ROOT_URLCONF = 'codestar.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATES_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -104,7 +106,8 @@ CSRF_TRUSTED_ORIGINS = [
     "https://8000-abi19x-djangoblog-xvz0c27sea8.ws-eu118.gitpod.io",
     "https://8000-abi19x-djangoblog-8ipklgnzvkh.ws-eu118.gitpod.io",
     "https://8000-abi19x-djangoblog-jp9ca1g13xa.ws-eu118.gitpod.io",
-    "https://8000-abi19x-djangoblog-ucykr626v2h.ws-eu118.gitpod.io"
+    "https://8000-abi19x-djangoblog-ucykr626v2h.ws-eu118.gitpod.io",
+    "https://8000-abi19x-djangoblog-unede7uygym.ws-eu118.gitpod.io"
 ]
 
 # Password validation
@@ -142,6 +145,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
