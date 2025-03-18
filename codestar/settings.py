@@ -40,7 +40,8 @@ ALLOWED_HOSTS = [
     '8000-abi19x-djangoblog-tzch1tuo4ip.ws-eu118.gitpod.io',
     '8000-abi19x-djangoblog-ucykr626v2h.ws-eu118.gitpod.io',
     '8000-abi19x-djangoblog-unede7uygym.ws-eu118.gitpod.io',
-    '8000-abi19x-djangoblog-bwptryhydrk.ws-eu118.gitpod.io'
+    '8000-abi19x-djangoblog-bwptryhydrk.ws-eu118.gitpod.io',
+    '8000-abi19x-djangoblog-igi2s1u412m.ws-eu118.gitpod.io'
 ]
 
 
