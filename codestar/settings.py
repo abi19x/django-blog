@@ -28,13 +28,12 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-csq9vd4p+hz$2@1bfmf4obb=87b&@d#1*xoq4ozaeqru+t6p+t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '8000-abi19x-djangoblog-vkv0g423ihf.ws-eu118.gitpod.io',
     '.herokuapp.com',
-    '8000-abi19x-djangoblog-u4oy0fjqll5.ws-eu118.gitpod.io',
-    '8000-abi19x-djangoblog-yielq51am9e.ws-eu118.gitpod.io'
+    '8000-abi19x-djangoblog-i6tg8fgjr3q.ws-eu118.gitpod.io'
 ]
 
 
@@ -60,7 +59,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',    
 ]
 
 ROOT_URLCONF = 'codestar.urls'
@@ -99,7 +98,8 @@ DATABASES = {
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeinstitute-ide.net/",
     "https://*.herokuapp.com",
-    "https://8000-abi19x-djangoblog-unede7uygym.ws-eu118.gitpod.io",
+    "https://8000-abi19x-djangoblog-i6tg8fgjr3q.ws-eu118.gitpod.io",
+    
 ]
 
 # Password validation
