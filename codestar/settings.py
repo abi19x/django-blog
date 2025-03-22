@@ -33,8 +33,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '8000-abi19x-djangoblog-vkv0g423ihf.ws-eu118.gitpod.io',
     '.herokuapp.com',
-    '8000-abi19x-djangoblog-i6tg8fgjr3q.ws-eu118.gitpod.io',
-    '8000-abi19x-djangoblog-d88estqr5d0.ws-eu118.gitpod.io'
+    '8000-abi19x-djangoblog-macgvm4urdi.ws-eu118.gitpod.io'
 ]
 
 
