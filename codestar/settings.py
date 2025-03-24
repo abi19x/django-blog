@@ -33,8 +33,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '8000-abi19x-djangoblog-vkv0g423ihf.ws-eu118.gitpod.io',
     '.herokuapp.com',
-    '8000-abi19x-djangoblog-macgvm4urdi.ws-eu118.gitpod.io',
-    '8000-abi19x-djangoblog-n38na9ypygy.ws-eu118.gitpod.io'
+    '8000-abi19x-djangoblog-ahuaqzck8bn.ws-eu118.gitpod.io'
 ]
 
 
@@ -51,6 +50,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'crispy_forms',
+    'crispy_bootstrap5',
     'django_summernote',
     'blog',
     'about',
@@ -59,6 +60,9 @@ INSTALLED_APPS = [
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -108,10 +112,7 @@ DATABASES = {
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeinstitute-ide.net/",
     "https://*.herokuapp.com",
-    "https://8000-abi19x-djangoblog-i6tg8fgjr3q.ws-eu118.gitpod.io",
-    "https://8000-abi19x-djangoblog-macgvm4urdi.ws-eu118.gitpod.io",
-    "https://8000-abi19x-djangoblog-n38na9ypygy.ws-eu118.gitpod.io",
-    
+    "https://8000-abi19x-djangoblog-ahuaqzck8bn.ws-eu118.gitpod.io",    
 ]
 
 # Password validation
