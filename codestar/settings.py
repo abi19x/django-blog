@@ -33,7 +33,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '8000-abi19x-djangoblog-vkv0g423ihf.ws-eu118.gitpod.io',
     '.herokuapp.com',
-    '8000-abi19x-djangoblog-ahuaqzck8bn.ws-eu118.gitpod.io'
+    '8000-abi19x-djangoblog-ahuaqzck8bn.ws-eu118.gitpod.io',
+    '8000-abi19x-djangoblog-195w24jhwaj.ws-eu118.gitpod.io'
 ]
 
 
@@ -113,6 +114,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://*.codeinstitute-ide.net/",
     "https://*.herokuapp.com",
     "https://8000-abi19x-djangoblog-ahuaqzck8bn.ws-eu118.gitpod.io",    
+    "https://8000-abi19x-djangoblog-195w24jhwaj.ws-eu118.gitpod.io",
 ]
 
 # Password validation
