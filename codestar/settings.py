@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+from django.contrib.messages import constants as messages
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
@@ -33,7 +34,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '8000-abi19x-djangoblog-vkv0g423ihf.ws-eu118.gitpod.io',
     '.herokuapp.com',
-    '8000-abi19x-djangoblog-ad0mz6z4uor.ws-eu118.gitpod.io'
+    '8000-abi19x-djangoblog-nks6hadc6eu.ws-eu118.gitpod.io'
 ]
 
 
@@ -114,7 +115,7 @@ DATABASES = {
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeinstitute-ide.net/",
     "https://*.herokuapp.com",
-    "https://8000-abi19x-djangoblog-ad0mz6z4uor.ws-eu118.gitpod.io",
+    "https://8000-abi19x-djangoblog-nks6hadc6eu.ws-eu118.gitpod.io",
 ]
 
 # Password validation
@@ -153,7 +154,6 @@ MESSAGE_TAGS = {
     messages.SUCCESS: 'alert-success',
     messages.ERROR: 'alert-danger',
 }
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
